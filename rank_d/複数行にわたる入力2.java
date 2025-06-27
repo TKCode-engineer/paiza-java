@@ -1,0 +1,12 @@
+import java.util.Scanner;
+import java.util.stream.IntStream;
+
+public class 複数行にわたる入力2 {
+  public static void main(String[] args) {
+    try (Scanner sc = new Scanner(System.in)) {
+      var n = sc.nextInt();
+
+      IntStream.range(0, n).map(i -> sc.nextInt()).forEach(System.out::println);
+    }
+  }
+}
